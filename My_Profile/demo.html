@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <script src="https://kit.fontawesome.com/c7a9315f6a.js" crossorigin="anonymous"></script>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+        <title>This is a title.</title>
+        <style>
+            * {
+                font-family: sans-serif;
+                color: #303030;
+                margin: 0;
+                border: 0;
+                padding: 0;
+            }
+            hr {
+                border: 1px solid #BDBDBD;  //寬度 線體 顏色
+                background-color:#BDBDBD;
+                margin: 10px 0;
+            }
+            #mypage {
+                // width 預設是視窗的100%寬
+                background-color:#f4fafb;
+                min-height: 100vh;
+                overflow: auto; // auto ：置中
+            }
+            #mypage > div {
+                margin: auto;   //兩邊margin一樣寬 = 置中
+                width: 80%;    //佔mypage的80%寬
+                padding: 20px;
+            }
+            .content-box {
+                margin: 20px 0; //外邊距
+                padding: 20px;  //內邊距
+                background-color: white;
+                box-shadow: 1px 1px 5px gray;   //陰影 :寬度 偏移程度 渲染程度
+                border-radius: 10px;    //圓角
+            }
+            li {
+                margin-left: 20px;  //跟左邊的距離保持20px
+            }
+            a {
+                padding-right: 10px;
+            }
+            i:hover {   //hover: 游標跑上icon時會觸發
+                color: gray;    //變色
+                transition-duration: 200ms; //延遲
+            }
+        </style>
+    </head>
+    <body>
+        <div id="mypage">   <!--用來設定背景顏色-->
+            <div>   <!--用來裝所有內容並且設定最大寬度-->
+                <h1>大家好，我是範例</h1>
+                <div class="content-box">   <!--第一個區塊-->
+                    <h2>簡介</h2>
+                    <hr>    <!--分隔線-->
+                    <table> <!--一行兩列的Table，左邊放圖片、右邊放文字-->
+                        <tr>    <!-- tr:列-->
+                            <td style="width: 50%;">    <!-- td:行-->
+                                <img src="monkey.jpg" style="width: 100%;" alt=""></td>
+                            <td style="width: 50%; padding:10px;">
+                                大家好，這是我的個人頁面介紹欄位，我只是一個範例。</td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="content-box">
+                    <h2>興趣</h2>
+                    <hr>
+                    <div>
+                        大家好，這是我的個人頁面介紹欄位，我只是一個範例，以下是唬爛產生器的內容：呂凱特說過，生命不可能有兩次，但許多人連一次也不善於度過。這段話看似複雜，其中的邏輯思路卻清晰可見。生活中，若我是誰出現了，我們就不得不考慮它出現了的事實。探討我是誰時，如果發現非常複雜，那麼想必不簡單。對於一般人來說，我是誰究竟象徵著什麼呢？
+                    </div>
+                </div>
+                <div class="content-box">
+                    <h2>專長</h2>
+                    <hr>
+                    <div>
+                        <ul>
+                            <li>專長一</li>
+                            <li>專長二</li>
+                            <li>專長三</li>
+                            <li>專長四</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="content-box">
+                    <h2>連結</h2>
+                    <hr>
+                    <div>   <!-- i 是icon , target：用新的網頁開啟-->
+                        <a href="https://github.com/ryanxuan930" target="_blank"><i class="fab fa-github fa-2x"></i></a>    
+			            <a href="https://t.me/ryanxuan930" target="_blank"><i class="fab fa-telegram fa-2x"></i></a>
+			            <a href="mailto:anakinchung930@gmail.com" target="_blank"><i class="fas fa-at fa-2x"></i></a>
+			            <a href="https://www.facebook.com/ryan.pohsuanchang" target="_blank"><i class="fab fa-facebook fa-2x"></i></a>
+			            <a href="https://www.linkedin.com/in/ryan-po-hsuan-chang-055a0a253" target="_blank"><i class="fab fa-linkedin fa-2x"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
