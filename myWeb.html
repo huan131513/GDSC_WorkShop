@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+
+<html>
+    
+    <head>
+        <meta charset="utf-8">
+        <title>HUAN WEB</title>
+        <script type="text/javascript">
+            document.getElementById('count').onclick = function(){
+                var n1 = parseInt(document.getElementById('n1').value);
+                var n2 = parseInt(document.getElementById('n2').value);
+                var ans = n1+n2;
+                document.getElementById('ans').textContent = ans;
+            }
+            document.getElementById('count').onclick = f(){
+                alert("click!!");
+            }
+            document.getElementById('btn1').onclick = f(){
+                alert("Hello~");
+            }
+        </script>
+        <link rel="preconnect" href="https://fonts.googleapis.com"> 
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+        <link href="https://fonts.googleapis.com/css2?family=Hurricane&display=swap" rel="stylesheet">
+        <style>
+            .container{
+                display:flex;
+            }
+            .item{
+                background: #0bd;
+                color:#fff;
+                margin:10px;
+                padding:10px;
+                margin: auto;
+                width: 350px;
+                height:500px;
+            }
+            .box{
+                background-color:rgb(8, 187, 241);
+                height:700px;
+                width:500px;
+                margin:0px 1px 1px 1px;
+                color: white;
+                text-align: center;
+            }
+            .padding_50px{
+                color: white;
+                padding-top: 10px;
+                font-weight: bold;
+                font-size:50px;
+                font-family: 'Hurricane', cursive;
+                text-align: center;
+            }
+            .padding_b_20px{
+                color: black;
+                padding-top: 10px;
+                font-weight: bold;
+                font-size:20px;
+                font-family: 'Hurricane', cursive;
+                text-align: center;
+            }
+            .padding_20px_black{
+                color: black;
+                padding-top: 10px;
+                font-weight: bold;
+                font-size:20px;
+                font-family: 'Hurricane', cursive;
+            }
+        </style>
+    </head>
+    <body background="macOSSierrawallpaper_03Mac.jpeg">
+        <div class="container">
+            <div class="item">
+                    <h3 class="padding_20px_black">數字運算系統</h3>
+                    <p>n1=<input type="text" id='n1' ><br>n2=<input type="text" id='n2' ></p>
+                    <button onclick="click(this)">確認</button><br>
+                    <p>n1+n2 = <em id='ans'></em></p>
+            </div>
+            <div class="item" >
+                <a class = "padding_50px">Live is awesome!!</a>
+            </div>
+            <div class="item">
+                <a class = "padding_b_20px">帳號</a><br>
+                <input type="text" id="account"><br>
+                <a class = "padding_b_20px">密碼</a><br>
+                <input type="password" id="password">
+
+            </div>
+        </div>
+        <script>
+            
+        </script>
+    </body>
+</html>
